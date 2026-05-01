@@ -1,0 +1,11 @@
+scenario,planner,beam_width,num_attractions,num_days,budget,day_start,day_end,feasible,num_violations,attractions_visited,total_cost,remaining_budget,total_satisfaction,total_visit_minutes,total_travel_minutes,travel_ratio,category_diversity,daily_balance,runtime_seconds
+easy,greedy,,20,3,400.0,08:00,22:00,True,0,20,352.0,48.0,116.3,1680.0,308.0,0.155,1.0,0.62,0.0158
+easy,beam_search,5,20,3,400.0,08:00,22:00,True,0,20,352.0,48.0,116.3,1680.0,302.5,0.153,1.0,0.62,0.1632
+standard,greedy,,30,3,200.0,09:00,21:00,True,0,18,200.0,0.0,106.4,1230.0,230.0,0.158,1.0,0.4,0.0233
+standard,beam_search,5,30,3,200.0,09:00,21:00,True,0,19,198.0,2.0,110.4,1305.0,277.3,0.175,1.0,0.67,0.2279
+tight_budget,greedy,,30,3,80.0,09:00,21:00,True,0,10,80.0,0.0,64.4,600.0,135.4,0.184,0.67,0.0,0.014
+tight_budget,beam_search,5,30,3,80.0,09:00,21:00,True,0,11,80.0,0.0,66.2,735.0,168.5,0.186,0.83,0.04,0.1184
+tight_time,greedy,,30,3,200.0,10:00,17:00,True,0,15,199.0,1.0,98.3,1005.0,225.6,0.183,0.83,0.8,0.0232
+tight_time,beam_search,5,30,3,200.0,10:00,17:00,True,0,14,163.0,37.0,94.6,1020.0,213.5,0.173,1.0,0.88,0.187
+large_problem,greedy,,50,5,400.0,09:00,21:00,True,0,35,400.0,0.0,226.2,2340.0,441.2,0.159,1.0,0.41,0.0714
+large_problem,beam_search,10,50,5,400.0,09:00,21:00,True,0,37,387.0,13.0,226.5,2355.0,554.9,0.191,1.0,0.65,2.2351
